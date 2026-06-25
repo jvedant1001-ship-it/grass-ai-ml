@@ -1,0 +1,211 @@
+technical terms
+What is Machine Learning?
+
+Machine learning is a branch of Machine Learning that studies how algorithms can learn patterns from data and make predictions or decisions without being explicitly programmed for every situation.
+
+A machine learning system typically learns a function:
+
+f(x)→y
+
+where:
+
+x = input data (features)
+y = output (label, prediction, action)
+Core Idea
+
+Instead of writing rules manually:
+
+Traditional programming
+
+Rules + Data → Output
+
+Machine learning
+
+Data + Outputs → Learned Rules (Model)
+
+The model discovers patterns from examples.
+
+Main Types of Learning
+1. Supervised Learning
+
+Learns from labeled examples.
+
+Example:
+
+Input: house size
+Output: house price
+
+Common tasks:
+
+Classification (spam/not spam)
+Regression (predicting numbers)
+
+Algorithms:
+
+Linear Regression
+Logistic Regression
+Decision Trees
+Neural Networks
+2. Unsupervised Learning
+
+Learns structure from unlabeled data.
+
+Tasks:
+
+Clustering
+Dimensionality reduction
+
+Algorithms:
+
+K-Means
+PCA
+Autoencoders
+3. Reinforcement Learning
+
+An agent learns through rewards and penalties.
+
+Components:
+
+Agent
+Environment
+State
+Action
+Reward
+
+Goal:
+Maximize cumulative reward.
+
+The Learning Process
+Collect data
+Split into:
+Training set
+Validation set
+Test set
+Train a model
+Measure performance
+Deploy
+Mathematical Foundation
+Loss Function
+
+Measures prediction error.
+
+Example:
+
+L(y,
+y
+^
+	​
+
+)=(y−
+y
+^
+	​
+
+)
+2
+
+where:
+
+y = true value
+y
+^
+	​
+
+ = prediction
+
+The objective is to minimize loss.
+
+Optimization
+
+Most models learn using:
+
+θ=θ−η∇L
+
+This is called Gradient Descent.
+
+θ = parameters
+η = learning rate
+∇L = gradient of loss
+Generalization
+
+The central question of machine learning theory:
+
+How can a model perform well on unseen data?
+
+A model should learn underlying patterns, not memorize training examples.
+
+Overfitting vs Underfitting
+Underfitting
+
+Model is too simple.
+
+High training error
+High test error
+Overfitting
+
+Model memorizes noise.
+
+Low training error
+High test error
+
+Goal:
+Balance complexity and generalization.
+
+Bias–Variance Tradeoff
+
+Prediction error can be viewed as:
+
+Error=Bias
+2
++Variance+Noise
+High bias → oversimplified model
+High variance → overfitted model
+
+Good models balance both.
+
+Statistical Learning Theory
+
+Developed largely by Vladimir Vapnik and others.
+
+Key idea:
+
+Learning is about minimizing:
+
+Expected Risk
+
+but we only observe finite samples.
+
+The challenge is estimating future performance from limited data.
+
+PAC Learning
+
+Probably Approximately Correct (PAC) learning asks:
+
+How many examples are needed to learn a good model with high probability?
+
+A concept is PAC-learnable if it can be learned efficiently from a finite number of examples.
+
+This provides theoretical guarantees on learning.
+
+VC Dimension
+
+The VC Dimension measures model capacity.
+
+Low VC dimension → simple models
+High VC dimension → flexible models
+
+Higher capacity can fit more patterns but may overfit.
+
+Deep Learning Perspective
+
+Modern AI uses deep neural networks.
+
+Key ideas:
+
+Layers learn hierarchical representations.
+Training uses backpropagation.
+Large datasets and compute enable strong performance.
+
+Theoretical understanding of why very large neural networks generalize so well remains an active research area in Deep Learning.
+
+One-Sentence Summary
